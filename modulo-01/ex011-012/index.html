@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <!-- 
+    Para um site, tente trabalhar, caso imagens:
+     grandes: use 1000px 1000px
+     médias: use 700px 700px
+     pequenas: use 300px 300px 
+     -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Lembre-se de adicionar a pasta na frente caso o arquivo esteja em outra pasta-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+        <!--Existe uma ordem entre os <source> os primeiros serão os menores-->
+
+
+    </picture>
+    <!-- Note que, utiliza-se a tag PICTURE que vai concentrar outras fontes de imagem-->
+    <!-- A tag SOURCE possui 3 atributos:
+     type: indicar o media type da imagem que usamos
+     srcset: configurar o nome da imagem que será carragada quando o tamanho indicado for atingido
+     media: tamanho ma´ximo a ser considerado para carregar a imagem indicada no atributo srcset-->
+
+     <h1>Reproduzindo áudio</h1>
+     <p>Aprendendo a reproduzir áudios em HTML5</p>
+     <p>Basta utilizar a tag &lt;audio&gt; e alguns &lt;source&gt;</p>
+     <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!--
+        Atributo preload, tres valoreS:
+        - metadata: carrega apenas informações sobre o arquivo (tamanho, tempo, informações de direito)
+        - none: Não vai carregar nada até que ousuario clique no play
+        - auto (padrão): vai carregar o  aqruivo de audio inteiro mesmo que o usuario nao aperte o play=
+        -->
+        <!--O atributo CONTROLS: apresentar o player na tela.-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Um vídeo hospedado no meu próprio servidor</p>
+    <video width="600" poster="imagens-012/limoes-capa.png" controls autoplay>
+        <source src="midias-012/meu-video.mp4" type="videomp4">
+        
+
+
+
+
+
+    </video>
+
+        
+       
+
+    
+    
+    
+    
+    </audio>
+
+
+
+</body>
+</html>
