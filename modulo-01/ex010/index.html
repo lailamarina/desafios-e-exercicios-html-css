@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com LINKS</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://lailamarina.github.io/Estudo-Dev-by-Laila-Marina/" target="_blank">site público no GitHub</a></p>
+    <!--Ao lado do link você pode adicionar o parametro TARGET para controlar o destino do site:
+    "_blank" vai abrir em uma nova janela
+    "_self" abrir o link na janela ou frame atual (é o padrão)
+    "_top" desfaz todos os frames e abre o destino no navegador completo
+    "partent" similar ao uso do _top
+    Utilize mais o _blank e o _self
+    -->
+    <p>Você também pode acessar o <a href="https://youtu.be/PZg6zJkW2nw?si=2wdAOIWRAcL8L5qN" target="_blank">vídeo do meu streamer favorito</a></p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, <a href="pagina2.html" target="_self" rel="next">pode acessar também a segunda página</a></p>
+    <!--Note que dá pra indicar a natureza do destino usando o atributo REAL depois do TARGET, você pode usar:
+    next - indica que o link é para a próxima parte do documento autal
+    prev - indica que o link é para a parte anterior do documento atual
+    author - indica que é um link para o site do autor do artigo atual
+    external - indica que é um link para outro site que não faz parte do site atual
+    -->
+    <p>Você também pode acessar a <a href="notícias/pagina3.html" target="_self" rel="next">nossa página de nóticias</a></p>
+    <h1>Links para download</h1>
+    <!--Para download você vai usar o mesmo href, porém vai adicionar ao lado do endereço "download" e type="aplicattion/pdf" caso o documento esteja em PDF
+    Se não estiver, existem alguns types:
+    application/zip
+    text/html
+    text/css
+    text/javascript
+    video/mp4
+    video/H264
+    video/JPEG
+    video/aac
+    image/png
+    image/jpeg
+    -->
+    <ul>
+        <li><a href="livros/meulivro.pdf" download="meulivro.pdf" type="aplicattion/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livros/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    
+    </ul>
+</body>
+</html>
