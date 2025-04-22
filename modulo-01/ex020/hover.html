@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{
+            color: red;
+        }
+        div > p{
+            display: none;
+        } /* você pode esconder coisas dentro da div, utilizando o >, significa que o paragrafo está dentro da DIV (é um filho), e você não quer que ele seja visto (por isso o display:none)*/
+        div:hover > p{
+            display: block;
+            color: aqua;
+            background-color: black;
+            width: 300px;
+        } /*Para aparecer o que você escondeu acima, você adiciona a psudoclasse hover por exemplo, e o display block*/
+
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+
+
+    </div>
+
+
+
+</body>
+</html>

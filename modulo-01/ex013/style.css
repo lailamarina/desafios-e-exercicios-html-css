@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* Caso tenha problemas de acentuação, use ele */
+
+body{
+    background-color: #ADADAD;
+    /*significa plano de fundo do corpo (body) no html lá */
+    color: #956982;
+    /*significa a cor da fonte*/
+    font-size: 16px;
+    /*tamanho da fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*tipo da fonte*/
+}
+
+h1{
+    color: #64E0CC;
+}
+
+p{
+    text-align: justify;
+    /*Colocar o texto em formato justificado*/
+}
+
+a{
+    color: #737373;
+    text-decoration: none; /*Tira o sublinhado embaixo do link*/
+
+
+
+
+
+}

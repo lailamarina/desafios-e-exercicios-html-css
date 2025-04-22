@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(113, 113, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: rgb(30, 30, 255);
+    /* o H1 que tiver um identificador "principal" posso selecionar*/
+}
+
+h1#principal {
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 10px;
+    /*em HTML é id, em CSS é #*/
+}
+
+h2{
+    color: rgb(42, 41, 41);
+}
+/*em HTML é class, em CSS é .*/
+.basico{
+    color: blueviolet;
+}
+.intermediario{
+    color: darkorange;
+}
+.avançado{
+    color: red;
+   
+ 
+}
